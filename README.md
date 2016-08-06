@@ -20,12 +20,17 @@ sudo service docker start
 docker build --tag xico/squid .
 ```
 
-# Run docker compose
+# Option 1 - Run docker directly
+```bash
+sudo docker run -d -p 3128:3128 xico/squid:latest
+```
+
+# Option 2 - Run docker compose
 ```bash
 sudo docker-compose up
 ```
 
-# To run in the background
+# Option 3 - To run in the background
 ```bash
 sudo docker-compose start
 ```
