@@ -15,6 +15,8 @@ sudo htpasswd -c squid-passwd username_you_like
 
 # Build docker image
 ```bash
+sudo yum install -y docker
+sudo service docker start
 docker build --tag xico/squid .
 ```
 
