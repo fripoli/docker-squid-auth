@@ -9,6 +9,7 @@ git clone https://github.com/fripoli/docker-squid-auth.git
 # Create a squid-passwd file inside the cloned folder
 ```bash
 cd docker-squid-auth
+sudo yum install httpd-tools
 sudo htpasswd -c squid-passwd username_you_like
 ```
 
